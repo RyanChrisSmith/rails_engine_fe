@@ -1,0 +1,5 @@
+<h1><%= @merchant.name %>'s Items</h1>
+<p>Items</p>
+<ul><% @items.each do |item| %>
+  <li><p><%= link_to item.name, api_v1_item_path(item.id) %></p></li>
+  <% end %></ul>
